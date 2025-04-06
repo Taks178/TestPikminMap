@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3B15CD4D2DA243520048E30B /* MapLibreSwiftDSL in Frameworks */ = {isa = PBXBuildFile; productRef = 3B15CD4C2DA243520048E30B /* MapLibreSwiftDSL */; };
+		3B15CD4F2DA243520048E30B /* MapLibreSwiftMacros in Frameworks */ = {isa = PBXBuildFile; productRef = 3B15CD4E2DA243520048E30B /* MapLibreSwiftMacros */; };
+		3B15CD512DA243520048E30B /* MapLibreSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3B15CD502DA243520048E30B /* MapLibreSwiftUI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		3B15CD292DA23D100048E30B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B15CD512DA243520048E30B /* MapLibreSwiftUI in Frameworks */,
+				3B15CD4D2DA243520048E30B /* MapLibreSwiftDSL in Frameworks */,
+				3B15CD4F2DA243520048E30B /* MapLibreSwiftMacros in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +121,9 @@
 			);
 			name = TestPikminMap;
 			packageProductDependencies = (
+				3B15CD4C2DA243520048E30B /* MapLibreSwiftDSL */,
+				3B15CD4E2DA243520048E30B /* MapLibreSwiftMacros */,
+				3B15CD502DA243520048E30B /* MapLibreSwiftUI */,
 			);
 			productName = TestPikminMap;
 			productReference = 3B15CD1B2DA23D0F0048E30B /* TestPikminMap.app */;
@@ -195,6 +207,9 @@
 			);
 			mainGroup = 3B15CD122DA23D0F0048E30B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3B15CD4B2DA243520048E30B /* XCRemoteSwiftPackageReference "swiftui-dsl" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3B15CD1C2DA23D0F0048E30B /* Products */;
 			projectDirPath = "";
@@ -550,6 +565,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B15CD4B2DA243520048E30B /* XCRemoteSwiftPackageReference "swiftui-dsl" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maplibre/swiftui-dsl";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B15CD4C2DA243520048E30B /* MapLibreSwiftDSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B15CD4B2DA243520048E30B /* XCRemoteSwiftPackageReference "swiftui-dsl" */;
+			productName = MapLibreSwiftDSL;
+		};
+		3B15CD4E2DA243520048E30B /* MapLibreSwiftMacros */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B15CD4B2DA243520048E30B /* XCRemoteSwiftPackageReference "swiftui-dsl" */;
+			productName = MapLibreSwiftMacros;
+		};
+		3B15CD502DA243520048E30B /* MapLibreSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B15CD4B2DA243520048E30B /* XCRemoteSwiftPackageReference "swiftui-dsl" */;
+			productName = MapLibreSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3B15CD132DA23D0F0048E30B /* Project object */;
 }
